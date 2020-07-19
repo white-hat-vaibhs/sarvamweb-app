@@ -1,32 +1,21 @@
 import React from 'react';
 import axios from 'axios';
-
+import ProductList from '../components/Index/ProductList'
 
 function Home({ products }) {
-  console.log(products)
-  // React.useEffect(() => {
-  //   getProducts();
-  // }, [])
+  // console.log(products)
 
-
-  // async function getProducts() {
-  //   const url = 'http://localhost:3000/api/products';
-  //   const response = await axios.get(url);
-  //   console.log(response.data)
-  // }
-
-  return <>home</>;
+  return <ProductList products={products} />
 }
 
 Home.getInitialProps = async () => {
-  //fetch data on serevr
+  //fetch data on server 
   const url = 'http://localhost:3000/api/products';
-  const response = await axios.get(url);
-  //return response data as an object
-  //test: return { hello: 'world' }
-
-  return { products: response.data };
-  //note: this object will be merged with existing props
+  const response = await axios.get(url)
+  return { products: response.data }
+  // return response data as an object 
+  return { hello: "world" };
+  // note: thid object eill be merged with existing ptop
 }
 
 export default Home;

@@ -4,7 +4,7 @@ import Router, { useRouter } from "next/router";
 import NProgress from 'nprogress';
 
 
-Router.onRouteChangeStart = () => NProgress.start()
+Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
@@ -18,7 +18,7 @@ function Header() {
   }
 
   return (
-    <Menu fluid id="menu" inverted >
+    <Menu stackable fluid id="menu" inverted >
       <Container text>
         <Link href="/">
           <Menu.Item header>
