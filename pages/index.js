@@ -22,6 +22,19 @@ export default Home;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //database credentials 
 //sarvam
 //manomaya

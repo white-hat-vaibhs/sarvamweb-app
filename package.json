@@ -1,11 +1,11 @@
 {
-  "name": "react-reserve",
+  "name": "sarvam-app",
   "version": "1.0.0",
   "description": "Project for MERN Stack - The Complete Guide",
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "start": "next start -p $PORT",
+    "start": "next start -p $3000",
     "build": "next build"
   },
   "keywords": [],
